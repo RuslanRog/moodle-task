@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local\catalog\db" VERSION="20230303" COMMENT="XMLDB file for local_catalog plugin"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLES>
+        <TABLE NAME="local_catalog_products" COMMENT="each record is for local_catalog">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="title" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="description" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+                <FIELD NAME="timestart" TYPE="datetime" NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="timeend" TYPE="datetime" NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="timecreated" TYPE="datetime" NOTNULL="true" SEQUENCE="false"/>
+                <FIELD NAME="timemodified" TYPE="datetime" NOTNULL="true" SEQUENCE="false"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>
